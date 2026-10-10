@@ -79,7 +79,7 @@ cp .env.example .env
 Edit `.env` with your configuration:
 
 ```env
-VITE_API_BASE_URL=http://localhost:3000/api
+VITE_API_BASE_URL=http://localhost:8080/api/v1
 ```
 
 > **Note:** All environment variables in Vite must be prefixed with `VITE_` to be exposed to the client.
