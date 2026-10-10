@@ -5,7 +5,7 @@ import ReservationCard from './components/ReservationCard';
 import { fetchStock } from './services/api';
 import type { StockResponse, ActiveReservation, ReserveResponse } from './types';
 
-const ITEM_ID = 'item_4025';
+const ITEM_ID =  import.meta.env.VITE_ITEM_ID;
 
 export default function App() {
   const [stock, setStock] = useState<StockResponse | null>(null);

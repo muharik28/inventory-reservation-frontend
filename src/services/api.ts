@@ -6,7 +6,7 @@ import type {
   ConfirmResponse,
 } from '../types';
 
-const BASE_URL = '/api/v1/inventory';
+const BASE_URL = `${import.meta.env.VITE_API_BASE_URL}/inventory`;
 
 async function handleResponse<T>(res: Response): Promise<T> {
   const data = await res.json();
